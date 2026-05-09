@@ -1,0 +1,25 @@
+/* Reset y estilos base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #87CEEB;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* El canvas ocupa todo el viewport; las dimensiones las gestiona JS */
+#gameCanvas {
+  display: block;
+  /* Sin width/height fijos — JS asigna canvas.width y canvas.height */
+}
